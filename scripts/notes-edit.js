@@ -9,7 +9,7 @@ const lastEditElement = document.querySelector("#last-edited")
 let note = notes.find((n) => n.id === noteId)
 
 if (!note) {
-    location.assign("/index.html")
+    location.assign("//adgsankar.github.io/notesapp/index.html")
 }
 
 // function editNoteBody(notes, noteId, title) {
@@ -35,7 +35,7 @@ bodyElement.addEventListener("input", (e) => {
 removeNoteElement.addEventListener("click", (e) => {
     removeNote(note.id)
     setNotes(notes)
-    location.assign("/index.html")
+    location.assign("//adgsankar.github.io/notesapp/index.html")
 })
 
 window.addEventListener('storage', (e) => {
@@ -45,7 +45,7 @@ window.addEventListener('storage', (e) => {
         const notes = JSON.parse(e.newValue);
         note = notes.find((n) => n.id === noteId)
         if (!note) {
-            location.assign("/index.html")
+            location.assign("//adgsankar.github.io/notesapp/index.html")
         }
         titleElement.value = note.title;
         bodyElement.value = note.body;
