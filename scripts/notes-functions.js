@@ -25,7 +25,7 @@ const createElement = (fNote) => {
     const textEl = document.createElement('p')
     const statusEl = document.createElement('p')
 
-    noteEl.setAttribute('href', `//adgsankar.github.io/notesapp/edit.html#${fNote.id}`)
+    noteEl.setAttribute('href', `./edit.html#${fNote.id}`)
     textEl.textContent = fNote.title.length > 0 ? fNote.title : 'Un Named'
     statusEl.textContent = generateLastEdited(fNote.updatedAt)
 

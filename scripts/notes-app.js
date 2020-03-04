@@ -71,7 +71,7 @@ document.querySelector('#create-notes').addEventListener('click', (e) => {
     renderNotes(notes, filters)
     // e.target.elements.newNote.value = ''
     // console.log('asdfasd')
-    location.assign(`//adgsankar.github.io/notesapp/edit.html#${nId}`)
+    location.assign(`./edit.html#${nId}`)
 })
 
 // document.querySelector('#for-fun').addEventListener('change', (e) => {
